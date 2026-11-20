@@ -23,6 +23,10 @@ package = "dev.cubicraft.desktop"
 apk_name = "cubicraft"
 build_targets = ["aarch64-linux-android"]
 
+[package.metadata.android.signing.release]
+path = "release.keystore"
+keystore_password = "cubicraft"
+
 [package.metadata.android.sdk]
 min_sdk_version = 21
 target_sdk_version = 30
