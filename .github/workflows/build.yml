@@ -73,9 +73,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: android-actions/setup-android@v3
       - name: Install NDK
-        run: sdkmanager --install "ndk;26.3.11579264" >/dev/null
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null 2>&1 || true
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "ndk;26.3.11579264" "platform-tools" >/dev/null
+          echo "ANDROID_NDK_ROOT=$ANDROID_HOME/ndk/26.3.11579264" >> "$GITHUB_ENV"
       - uses: dtolnay/rust-toolchain@stable
         with:
           targets: aarch64-linux-android
@@ -83,8 +85,6 @@ jobs:
       - name: Install cargo-apk
         run: cargo install cargo-apk --locked
       - name: Build APK
-        env:
-          ANDROID_NDK_ROOT: ${{ env.ANDROID_HOME }}/ndk/26.3.11579264
         run: cargo apk build --release -p cubicraft-desktop
       - name: Upload to release
         env:
