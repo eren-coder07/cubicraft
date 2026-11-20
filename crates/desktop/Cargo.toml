@@ -6,6 +6,17 @@ edition.workspace = true
 [lib]
 crate-type = ["cdylib", "rlib"]
 
+[features]
+default = []
+# the interactive binary; disabled for `cargo apk build` (which requires a
+# pure cdylib package)
+desktop = []
+
+[[bin]]
+name = "cubicraft-desktop"
+path = "src/main.rs"
+required-features = ["desktop"]
+
 [target.'cfg(target_os = "android")'.dependencies]
 winit = { version = "0.30", features = ["android-native-activity"] }
 android-activity = { version = "0.6", features = ["native-activity"] }

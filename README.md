@@ -99,11 +99,11 @@ Their angles map onto the hair grid warp: displacement grows toward the hair tip
 
 ```bash
 # interactive window (desktop)
-cargo run -p cubicraft-desktop --release
+cargo run -p cubicraft-desktop --release --features desktop
 
 # render the README poses + frames
-cargo run -p cubicraft-desktop --release -- --screenshots screens
-cargo run -p cubicraft-desktop --release -- --frames frames 96
+cargo run -p cubicraft-desktop --release --features desktop -- --screenshots screens
+cargo run -p cubicraft-desktop --release --features desktop -- --frames frames 96
 
 # web
 cargo build --release --target wasm32-unknown-unknown -p cubicraft-web

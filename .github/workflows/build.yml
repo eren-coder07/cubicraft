@@ -55,7 +55,7 @@ jobs:
           targets: x86_64-pc-windows-gnu
       - uses: Swatinem/rust-cache@v2
       - name: Build exe (cross, mingw)
-        run: cargo build --release --target x86_64-pc-windows-gnu -p cubicraft-desktop
+        run: cargo build --release --target x86_64-pc-windows-gnu -p cubicraft-desktop --features desktop
       - name: Package
         run: |
           mkdir -p pkg
