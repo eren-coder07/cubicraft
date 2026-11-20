@@ -86,7 +86,7 @@ jobs:
         run: cargo install cargo-apk --locked
       - name: Generate signing keystore
         run: |
-          keytool -genkeypair -keystore release.keystore -alias cubicraft \
+          keytool -genkeypair -keystore crates/desktop/release.keystore -alias cubicraft \
             -keyalg RSA -keysize 2048 -validity 10000 \
             -storepass cubicraft -keypass cubicraft \
             -dname "CN=Cubicraft, O=cubicraft" >/dev/null 2>&1
