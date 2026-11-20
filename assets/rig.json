@@ -1,0 +1,19 @@
+{
+  "canvas": [1078, 2559],
+  "neck_pivot": [537, 505],
+  "hip_pivot": [537, 1500],
+  "physics": { "stiffness": 46, "damping": 7.0, "amp": 15, "amp2": 9 },
+  "parts": [
+    { "name": "body",  "kind": "body", "layers": ["Body2", "Layer 4", "Body 2 clothes", "Layer 2 copy"], "pivot": [537, 1500], "depth": 0.0, "grid": [6, 12] },
+    { "name": "face",  "kind": "head", "layers": ["Head", "face 3"], "pivot": [537, 505], "depth": 1.0, "grid": [5, 5] },
+    { "name": "eye_L", "kind": "eye", "from": "face", "rect": [75, 170, 147, 220], "pivot": [111, 195], "depth": 1.2, "grid": [4, 4], "side": "L" },
+    { "name": "eye_R", "kind": "eye", "from": "face", "rect": [202, 170, 256, 220], "pivot": [230, 193], "depth": 1.2, "grid": [4, 4], "side": "R" },
+    { "name": "lid_L", "kind": "lid", "from": "face", "pivot": [111, 197], "depth": 1.2, "rx": 31, "ry": 4, "color": [40, 33, 42, 255] },
+    { "name": "lid_R", "kind": "lid", "from": "face", "pivot": [230, 195], "depth": 1.2, "rx": 23, "ry": 4, "color": [40, 33, 42, 255] },
+    { "name": "mouth", "kind": "mouth", "from": "face", "rect": [118, 266, 212, 314], "pivot": [165, 285], "depth": 1.15, "grid": [4, 4] },
+    { "name": "mouth_open_outline", "kind": "mouth_open", "pivot": [568, 469], "depth": 1.15, "rx": 19, "ry": 24, "color": [46, 24, 28, 255] },
+    { "name": "mouth_open", "kind": "mouth_open", "pivot": [568, 469], "depth": 1.15, "rx": 16, "ry": 21, "color": [80, 40, 44, 255] },
+    { "name": "hair_shadow", "kind": "head", "layers": ["shadow copy 2"], "pivot": [537, 505], "depth": 1.15, "grid": [4, 4] },
+    { "name": "hair", "kind": "hair", "layers": ["hair 3 lines", "Layer 12", "hair 3 color"], "pivot": [537, 300], "depth": 1.3, "grid": [8, 10] }
+  ]
+}

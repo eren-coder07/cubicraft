@@ -1,0 +1,1910 @@
+{
+  "format": "ccm3",
+  "version": 1,
+  "name": "Momi",
+  "custom_params": [],
+  "root": {
+    "kind": "Warp",
+    "def": {
+      "rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 3.0,
+        "h": 3.0
+      },
+      "div_x": 2,
+      "div_y": 2,
+      "drivers": [
+        {
+          "pid": 27,
+          "kind": {
+            "ShiftX": {
+              "scale": 0.05,
+              "w": "One"
+            }
+          }
+        },
+        {
+          "pid": 28,
+          "kind": {
+            "ShiftY": {
+              "scale": -0.08,
+              "w": "One"
+            }
+          }
+        }
+      ],
+      "base_offsets": [],
+      "keyforms": []
+    },
+    "children": [
+      {
+        "kind": "Mesh",
+        "rect": {
+          "x": 0.96000004,
+          "y": 2.57,
+          "w": 1.0799999,
+          "h": 0.19000009
+        },
+        "div_x": 2,
+        "div_y": 2,
+        "uv": {
+          "x": 586.40015,
+          "y": 1457.65,
+          "w": 612.7999,
+          "h": 114.40005
+        },
+        "part": "Shadow",
+        "drivers": [],
+        "base_opacity": 1.0,
+        "opac_drivers": []
+      },
+      {
+        "kind": "Warp",
+        "def": {
+          "rect": {
+            "x": 0.76,
+            "y": 0.34,
+            "w": 1.48,
+            "h": 1.68
+          },
+          "div_x": 4,
+          "div_y": 4,
+          "drivers": [
+            {
+              "pid": 0,
+              "kind": {
+                "ShiftX": {
+                  "scale": 0.05,
+                  "w": "One"
+                }
+              }
+            },
+            {
+              "pid": 2,
+              "kind": {
+                "RotBy": {
+                  "pivot": {
+                    "x": 1.5,
+                    "y": 1.0
+                  },
+                  "deg": 8.0,
+                  "w": "One"
+                }
+              }
+            },
+            {
+              "pid": 25,
+              "kind": {
+                "ShiftX": {
+                  "scale": 0.045,
+                  "w": {
+                    "VGrad": [
+                      0.5,
+                      1.0
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "pid": 19,
+              "kind": {
+                "ShiftY": {
+                  "scale": -0.008,
+                  "w": "One"
+                }
+              }
+            }
+          ],
+          "base_offsets": [],
+          "keyforms": []
+        },
+        "children": [
+          {
+            "kind": "Mesh",
+            "rect": {
+              "x": 0.8875,
+              "y": 0.40124997,
+              "w": 1.2249997,
+              "h": 1.4718751
+            },
+            "div_x": 4,
+            "div_y": 4,
+            "uv": {
+              "x": 0.0,
+              "y": 0.0,
+              "w": 693.9998,
+              "h": 832.25006
+            },
+            "part": "BackHair",
+            "drivers": [],
+            "base_opacity": 1.0,
+            "opac_drivers": []
+          }
+        ]
+      },
+      {
+        "kind": "Rot",
+        "def": {
+          "pivot": {
+            "x": 1.5,
+            "y": 1.55
+          },
+          "drivers": [
+            {
+              "pid": 18,
+              "kind": {
+                "RotBy": {
+                  "pivot": {
+                    "x": 1.5,
+                    "y": 1.55
+                  },
+                  "deg": 7.0,
+                  "w": "One"
+                }
+              }
+            },
+            {
+              "pid": 16,
+              "kind": {
+                "RotBy": {
+                  "pivot": {
+                    "x": 1.5,
+                    "y": 2.1
+                  },
+                  "deg": 4.0,
+                  "w": "One"
+                }
+              }
+            }
+          ]
+        },
+        "children": [
+          {
+            "kind": "Warp",
+            "def": {
+              "rect": {
+                "x": 0.85,
+                "y": 1.4,
+                "w": 1.3,
+                "h": 1.32
+              },
+              "div_x": 2,
+              "div_y": 2,
+              "drivers": [
+                {
+                  "pid": 19,
+                  "kind": {
+                    "ScaleY": {
+                      "cv": 1.0,
+                      "k": -0.03,
+                      "w": "One"
+                    }
+                  }
+                },
+                {
+                  "pid": 19,
+                  "kind": {
+                    "ScaleX": {
+                      "cu": 0.5,
+                      "k": 0.012,
+                      "w": "One"
+                    }
+                  }
+                },
+                {
+                  "pid": 17,
+                  "kind": {
+                    "ShiftY": {
+                      "scale": 0.02,
+                      "w": "One"
+                    }
+                  }
+                }
+              ],
+              "base_offsets": [],
+              "keyforms": []
+            },
+            "children": [
+              {
+                "kind": "Mesh",
+                "rect": {
+                  "x": 1.37,
+                  "y": 1.4200001,
+                  "w": 0.26000002,
+                  "h": 0.2599999
+                },
+                "div_x": 2,
+                "div_y": 2,
+                "uv": {
+                  "x": 0.0,
+                  "y": 1457.65,
+                  "w": 153.6,
+                  "h": 153.59995
+                },
+                "part": "Neck",
+                "drivers": [],
+                "base_opacity": 1.0,
+                "opac_drivers": []
+              },
+              {
+                "kind": "Mesh",
+                "rect": {
+                  "x": 1.02125,
+                  "y": 1.553,
+                  "w": 0.95750004,
+                  "h": 1.112
+                },
+                "div_x": 4,
+                "div_y": 4,
+                "uv": {
+                  "x": 693.9998,
+                  "y": 0.0,
+                  "w": 544.2,
+                  "h": 630.72
+                },
+                "part": "Torso",
+                "drivers": [],
+                "base_opacity": 1.0,
+                "opac_drivers": []
+              },
+              {
+                "kind": "Rot",
+                "def": {
+                  "pivot": {
+                    "x": 1.86,
+                    "y": 1.68
+                  },
+                  "drivers": [
+                    {
+                      "pid": 22,
+                      "kind": {
+                        "RotBy": {
+                          "pivot": {
+                            "x": 1.86,
+                            "y": 1.68
+                          },
+                          "deg": 20.0,
+                          "w": "One"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "children": [
+                  {
+                    "kind": "Mesh",
+                    "rect": {
+                      "x": 1.7375144,
+                      "y": 1.6075144,
+                      "w": 0.35497132,
+                      "h": 0.6244858
+                    },
+                    "div_x": 3,
+                    "div_y": 3,
+                    "uv": {
+                      "x": 1394.234,
+                      "y": 832.25006,
+                      "w": 206.78394,
+                      "h": 357.71204
+                    },
+                    "part": "ArmR",
+                    "drivers": [],
+                    "base_opacity": 1.0,
+                    "opac_drivers": []
+                  }
+                ]
+              },
+              {
+                "kind": "Rot",
+                "def": {
+                  "pivot": {
+                    "x": 1.14,
+                    "y": 1.68
+                  },
+                  "drivers": [
+                    {
+                      "pid": 21,
+                      "kind": {
+                        "RotBy": {
+                          "pivot": {
+                            "x": 1.14,
+                            "y": 1.68
+                          },
+                          "deg": 20.0,
+                          "w": "One"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "children": [
+                  {
+                    "kind": "Mesh",
+                    "rect": {
+                      "x": 0.9075144,
+                      "y": 1.6075144,
+                      "w": 0.35497126,
+                      "h": 0.6244858
+                    },
+                    "div_x": 3,
+                    "div_y": 3,
+                    "uv": {
+                      "x": 1187.4501,
+                      "y": 832.25006,
+                      "w": 206.7839,
+                      "h": 357.71204
+                    },
+                    "part": "ArmL",
+                    "drivers": [],
+                    "base_opacity": 1.0,
+                    "opac_drivers": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "Rot",
+        "def": {
+          "pivot": {
+            "x": 1.5,
+            "y": 1.52
+          },
+          "drivers": [
+            {
+              "pid": 2,
+              "kind": {
+                "RotBy": {
+                  "pivot": {
+                    "x": 1.5,
+                    "y": 1.52
+                  },
+                  "deg": 10.0,
+                  "w": "One"
+                }
+              }
+            }
+          ]
+        },
+        "children": [
+          {
+            "kind": "Warp",
+            "def": {
+              "rect": {
+                "x": 0.8,
+                "y": 0.38,
+                "w": 1.4,
+                "h": 1.34
+              },
+              "div_x": 5,
+              "div_y": 4,
+              "drivers": [
+                {
+                  "pid": 0,
+                  "kind": {
+                    "ShiftX": {
+                      "scale": 0.058,
+                      "w": {
+                        "EdgeX": 0.6
+                      }
+                    }
+                  }
+                },
+                {
+                  "pid": 1,
+                  "kind": {
+                    "ShiftY": {
+                      "scale": 0.055,
+                      "w": {
+                        "VGrad": [
+                          0.7,
+                          0.6
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "pid": 19,
+                  "kind": {
+                    "ShiftY": {
+                      "scale": -0.01,
+                      "w": "One"
+                    }
+                  }
+                }
+              ],
+              "base_offsets": [],
+              "keyforms": []
+            },
+            "children": [
+              {
+                "kind": "Mesh",
+                "rect": {
+                  "x": 0.96656257,
+                  "y": 0.49499997,
+                  "w": 1.066875,
+                  "h": 1.1025
+                },
+                "div_x": 6,
+                "div_y": 5,
+                "uv": {
+                  "x": 0.0,
+                  "y": 832.25006,
+                  "w": 605.45,
+                  "h": 625.39996
+                },
+                "part": "Face",
+                "drivers": [],
+                "base_opacity": 1.0,
+                "opac_drivers": []
+              },
+              {
+                "kind": "Mesh",
+                "rect": {
+                  "x": 1.04,
+                  "y": 1.199,
+                  "w": 0.19000009,
+                  "h": 0.12599996
+                },
+                "div_x": 2,
+                "div_y": 2,
+                "uv": {
+                  "x": 0.0,
+                  "y": 1611.25,
+                  "w": 114.40005,
+                  "h": 78.559975
+                },
+                "part": "BlushL",
+                "drivers": [],
+                "base_opacity": 0.45,
+                "opac_drivers": [
+                  [
+                    15,
+                    1.0
+                  ]
+                ]
+              },
+              {
+                "kind": "Mesh",
+                "rect": {
+                  "x": 1.77,
+                  "y": 1.199,
+                  "w": 0.19000009,
+                  "h": 0.12599996
+                },
+                "div_x": 2,
+                "div_y": 2,
+                "uv": {
+                  "x": 114.40005,
+                  "y": 1611.25,
+                  "w": 114.40005,
+                  "h": 78.559975
+                },
+                "part": "BlushR",
+                "drivers": [],
+                "base_opacity": 0.45,
+                "opac_drivers": [
+                  [
+                    15,
+                    1.0
+                  ]
+                ]
+              },
+              {
+                "kind": "Rot",
+                "def": {
+                  "pivot": {
+                    "x": 1.25,
+                    "y": 0.92
+                  },
+                  "drivers": [
+                    {
+                      "pid": 11,
+                      "kind": {
+                        "RotBy": {
+                          "pivot": {
+                            "x": 1.25,
+                            "y": 0.92
+                          },
+                          "deg": -7.0,
+                          "w": "One"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "children": [
+                  {
+                    "kind": "Mesh",
+                    "rect": {
+                      "x": 1.15,
+                      "y": 0.83500004,
+                      "w": 0.20000008,
+                      "h": 0.06999997
+                    },
+                    "div_x": 2,
+                    "div_y": 2,
+                    "uv": {
+                      "x": 228.8001,
+                      "y": 1611.25,
+                      "w": 120.000046,
+                      "h": 47.19998
+                    },
+                    "part": "BrowL",
+                    "drivers": [
+                      {
+                        "pid": 9,
+                        "kind": {
+                          "ShiftY": {
+                            "scale": -0.028,
+                            "w": "One"
+                          }
+                        }
+                      }
+                    ],
+                    "base_opacity": 1.0,
+                    "opac_drivers": []
+                  }
+                ]
+              },
+              {
+                "kind": "Rot",
+                "def": {
+                  "pivot": {
+                    "x": 1.75,
+                    "y": 0.92
+                  },
+                  "drivers": [
+                    {
+                      "pid": 12,
+                      "kind": {
+                        "RotBy": {
+                          "pivot": {
+                            "x": 1.75,
+                            "y": 0.92
+                          },
+                          "deg": 7.0,
+                          "w": "One"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "children": [
+                  {
+                    "kind": "Mesh",
+                    "rect": {
+                      "x": 1.65,
+                      "y": 0.83500004,
+                      "w": 0.20000008,
+                      "h": 0.06999997
+                    },
+                    "div_x": 2,
+                    "div_y": 2,
+                    "uv": {
+                      "x": 348.80014,
+                      "y": 1611.25,
+                      "w": 120.000046,
+                      "h": 47.19998
+                    },
+                    "part": "BrowR",
+                    "drivers": [
+                      {
+                        "pid": 10,
+                        "kind": {
+                          "ShiftY": {
+                            "scale": -0.028,
+                            "w": "One"
+                          }
+                        }
+                      }
+                    ],
+                    "base_opacity": 1.0,
+                    "opac_drivers": []
+                  }
+                ]
+              },
+              {
+                "kind": "Warp",
+                "def": {
+                  "rect": {
+                    "x": 1.07,
+                    "y": 0.9,
+                    "w": 0.36,
+                    "h": 0.42
+                  },
+                  "div_x": 2,
+                  "div_y": 2,
+                  "drivers": [
+                    {
+                      "pid": 3,
+                      "kind": {
+                        "ScaleY": {
+                          "cv": 0.0,
+                          "k": -0.92,
+                          "w": "One"
+                        }
+                      }
+                    }
+                  ],
+                  "base_offsets": [],
+                  "keyforms": []
+                },
+                "children": [
+                  {
+                    "kind": "Mesh",
+                    "rect": {
+                      "x": 1.107,
+                      "y": 0.95300007,
+                      "w": 0.27600005,
+                      "h": 0.30399993
+                    },
+                    "div_x": 2,
+                    "div_y": 2,
+                    "uv": {
+                      "x": 1601.018,
+                      "y": 832.25006,
+                      "w": 162.56003,
+                      "h": 178.23996
+                    },
+                    "part": "EyeWhiteL",
+                    "drivers": [],
+                    "base_opacity": 1.0,
+                    "opac_drivers": [
+                      [
+                        5,
+                        -1.0
+                      ]
+                    ]
+                  },
+                  {
+                    "kind": "Mesh",
+                    "rect": {
+                      "x": 1.14,
+                      "y": 1.015,
+                      "w": 0.21000007,
+                      "h": 0.22000006
+                    },
+                    "div_x": 2,
+                    "div_y": 2,
+                    "uv": {
+                      "x": 335.20007,
+                      "y": 1457.65,
+                      "w": 125.60004,
+                      "h": 131.20004
+                    },
+                    "part": "EyeIrisL",
+                    "drivers": [
+                      {
+                        "pid": 7,
+                        "kind": {
+                          "ShiftX": {
+                            "scale": 0.032,
+                            "w": "One"
+                          }
+                        }
+                      },
+                      {
+                        "pid": 8,
+                        "kind": {
+                          "ShiftY": {
+                            "scale": 0.034,
+                            "w": "One"
+                          }
+                        }
+                      }
+                    ],
+                    "base_opacity": 1.0,
+                    "opac_drivers": [
+                      [
+                        5,
+                        -1.0
+                      ]
+                    ]
+                  },
+                  {
+                    "kind": "Mesh",
+                    "rect": {
+                      "x": 1.1009792,
+                      "y": 0.93500006,
+                      "w": 0.28804162,
+                      "h": 0.1528894
+                    },
+                    "div_x": 3,
+                    "div_y": 3,
+                    "uv": {
+                      "x": 1324.8,
+                      "y": 1457.65,
+                      "w": 169.30331,
+                      "h": 93.618065
+                    },
+                    "part": "EyeLashL",
+                    "drivers": [],
+                    "base_opacity": 1.0,
+                    "opac_drivers": [
+                      [
+                        5,
+                        -1.0
+                      ]
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "Mesh",
+                "rect": {
+                  "x": 1.115,
+                  "y": 1.03,
+                  "w": 0.26000002,
+                  "h": 0.13000003
+                },
+                "div_x": 2,
+                "div_y": 2,
+                "uv": {
+                  "x": 1663.4067,
+                  "y": 1457.65,
+                  "w": 153.6,
+                  "h": 80.80001
+                },
+                "part": "EyeSmileL",
+                "drivers": [],
+                "base_opacity": 0.0,
+                "opac_drivers": [
+                  [
+                    5,
+                    1.0
+                  ]
+                ]
+              },
+              {
+                "kind": "Warp",
+                "def": {
+                  "rect": {
+                    "x": 1.57,
+                    "y": 0.9,
+                    "w": 0.36,
+                    "h": 0.42
+                  },
+                  "div_x": 2,
+                  "div_y": 2,
+                  "drivers": [
+                    {
+                      "pid": 4,
+                      "kind": {
+                        "ScaleY": {
+                          "cv": 0.0,
+                          "k": -0.92,
+                          "w": "One"
+                        }
+                      }
+                    }
+                  ],
+                  "base_offsets": [],
+                  "keyforms": []
+                },
+                "children": [
+                  {
+                    "kind": "Mesh",
+                    "rect": {
+                      "x": 1.617,
+                      "y": 0.95300007,
+                      "w": 0.27600005,
+                      "h": 0.30399993
+                    },
+                    "div_x": 2,
+                    "div_y": 2,
+                    "uv": {
+                      "x": 1763.578,
+                      "y": 832.25006,
+                      "w": 162.56003,
+                      "h": 178.23996
+                    },
+                    "part": "EyeWhiteR",
+                    "drivers": [],
+                    "base_opacity": 1.0,
+                    "opac_drivers": [
+                      [
+                        6,
+                        -1.0
+                      ]
+                    ]
+                  },
+                  {
+                    "kind": "Mesh",
+                    "rect": {
+                      "x": 1.65,
+                      "y": 1.015,
+                      "w": 0.21000007,
+                      "h": 0.22000006
+                    },
+                    "div_x": 2,
+                    "div_y": 2,
+                    "uv": {
+                      "x": 460.8001,
+                      "y": 1457.65,
+                      "w": 125.60004,
+                      "h": 131.20004
+                    },
+                    "part": "EyeIrisR",
+                    "drivers": [
+                      {
+                        "pid": 7,
+                        "kind": {
+                          "ShiftX": {
+                            "scale": 0.032,
+                            "w": "One"
+                          }
+                        }
+                      },
+                      {
+                        "pid": 8,
+                        "kind": {
+                          "ShiftY": {
+                            "scale": 0.034,
+                            "w": "One"
+                          }
+                        }
+                      }
+                    ],
+                    "base_opacity": 1.0,
+                    "opac_drivers": [
+                      [
+                        6,
+                        -1.0
+                      ]
+                    ]
+                  },
+                  {
+                    "kind": "Mesh",
+                    "rect": {
+                      "x": 1.6109792,
+                      "y": 0.93500006,
+                      "w": 0.28804162,
+                      "h": 0.1528894
+                    },
+                    "div_x": 3,
+                    "div_y": 3,
+                    "uv": {
+                      "x": 1494.1034,
+                      "y": 1457.65,
+                      "w": 169.30331,
+                      "h": 93.618065
+                    },
+                    "part": "EyeLashR",
+                    "drivers": [],
+                    "base_opacity": 1.0,
+                    "opac_drivers": [
+                      [
+                        6,
+                        -1.0
+                      ]
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "Mesh",
+                "rect": {
+                  "x": 1.625,
+                  "y": 1.03,
+                  "w": 0.26000002,
+                  "h": 0.13000003
+                },
+                "div_x": 2,
+                "div_y": 2,
+                "uv": {
+                  "x": 1817.0067,
+                  "y": 1457.65,
+                  "w": 153.6,
+                  "h": 80.80001
+                },
+                "part": "EyeSmileR",
+                "drivers": [],
+                "base_opacity": 0.0,
+                "opac_drivers": [
+                  [
+                    6,
+                    1.0
+                  ]
+                ]
+              },
+              {
+                "kind": "Warp",
+                "def": {
+                  "rect": {
+                    "x": 1.3,
+                    "y": 1.28,
+                    "w": 0.4,
+                    "h": 0.26
+                  },
+                  "div_x": 3,
+                  "div_y": 2,
+                  "drivers": [
+                    {
+                      "pid": 13,
+                      "kind": {
+                        "ShiftY": {
+                          "scale": -0.014,
+                          "w": "One"
+                        }
+                      }
+                    },
+                    {
+                      "pid": 13,
+                      "kind": {
+                        "ScaleX": {
+                          "cu": 0.5,
+                          "k": 0.05,
+                          "w": "One"
+                        }
+                      }
+                    }
+                  ],
+                  "base_offsets": [],
+                  "keyforms": []
+                },
+                "children": [
+                  {
+                    "kind": "Mesh",
+                    "rect": {
+                      "x": 1.385,
+                      "y": 1.358,
+                      "w": 0.23000005,
+                      "h": 0.04999999
+                    },
+                    "div_x": 3,
+                    "div_y": 2,
+                    "uv": {
+                      "x": 468.80017,
+                      "y": 1611.25,
+                      "w": 136.80003,
+                      "h": 35.999992
+                    },
+                    "part": "MouthClosed",
+                    "drivers": [],
+                    "base_opacity": 1.0,
+                    "opac_drivers": [
+                      [
+                        14,
+                        -0.92
+                      ]
+                    ]
+                  },
+                  {
+                    "kind": "Mesh",
+                    "rect": {
+                      "x": 1.395,
+                      "y": 1.318,
+                      "w": 0.21000007,
+                      "h": 0.16400006
+                    },
+                    "div_x": 3,
+                    "div_y": 3,
+                    "uv": {
+                      "x": 1199.2001,
+                      "y": 1457.65,
+                      "w": 125.60004,
+                      "h": 99.840034
+                    },
+                    "part": "MouthOpen",
+                    "drivers": [
+                      {
+                        "pid": 14,
+                        "kind": {
+                          "ScaleX": {
+                            "cu": 0.5,
+                            "k": 0.12,
+                            "w": "One"
+                          }
+                        }
+                      }
+                    ],
+                    "base_opacity": 0.0,
+                    "opac_drivers": [
+                      [
+                        14,
+                        1.0
+                      ]
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "Warp",
+                "def": {
+                  "rect": {
+                    "x": 0.92,
+                    "y": 0.42,
+                    "w": 1.16,
+                    "h": 0.72
+                  },
+                  "div_x": 6,
+                  "div_y": 4,
+                  "drivers": [
+                    {
+                      "pid": 23,
+                      "kind": {
+                        "ShiftX": {
+                          "scale": 0.05,
+                          "w": {
+                            "VGrad": [
+                              0.35,
+                              1.0
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "pid": 0,
+                      "kind": {
+                        "ShiftX": {
+                          "scale": 0.022,
+                          "w": "One"
+                        }
+                      }
+                    }
+                  ],
+                  "base_offsets": [],
+                  "keyforms": []
+                },
+                "children": [
+                  {
+                    "kind": "Mesh",
+                    "rect": {
+                      "x": 0.98749995,
+                      "y": 0.42874998,
+                      "w": 1.0250001,
+                      "h": 0.6275
+                    },
+                    "div_x": 6,
+                    "div_y": 4,
+                    "uv": {
+                      "x": 605.45,
+                      "y": 832.25006,
+                      "w": 582.00006,
+                      "h": 359.4
+                    },
+                    "part": "Bangs",
+                    "drivers": [],
+                    "base_opacity": 1.0,
+                    "opac_drivers": []
+                  }
+                ]
+              },
+              {
+                "kind": "Warp",
+                "def": {
+                  "rect": {
+                    "x": 1.28,
+                    "y": 0.28,
+                    "w": 0.58,
+                    "h": 0.42
+                  },
+                  "div_x": 3,
+                  "div_y": 3,
+                  "drivers": [
+                    {
+                      "pid": 23,
+                      "kind": {
+                        "ShiftX": {
+                          "scale": 0.065,
+                          "w": {
+                            "VGrad": [
+                              0.2,
+                              1.0
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "base_offsets": [],
+                  "keyforms": []
+                },
+                "children": [
+                  {
+                    "kind": "Mesh",
+                    "rect": {
+                      "x": 1.41,
+                      "y": 0.3603125,
+                      "w": 0.3100001,
+                      "h": 0.23968747
+                    },
+                    "div_x": 3,
+                    "div_y": 3,
+                    "uv": {
+                      "x": 153.6,
+                      "y": 1457.65,
+                      "w": 181.60005,
+                      "h": 142.22499
+                    },
+                    "part": "Ahoge",
+                    "drivers": [],
+                    "base_opacity": 1.0,
+                    "opac_drivers": []
+                  }
+                ]
+              },
+              {
+                "kind": "Warp",
+                "def": {
+                  "rect": {
+                    "x": 0.76,
+                    "y": 0.58,
+                    "w": 0.48,
+                    "h": 1.32
+                  },
+                  "div_x": 3,
+                  "div_y": 4,
+                  "drivers": [
+                    {
+                      "pid": 24,
+                      "kind": {
+                        "ShiftX": {
+                          "scale": 0.055,
+                          "w": {
+                            "VGrad": [
+                              0.3,
+                              1.0
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "pid": 26,
+                      "kind": {
+                        "ShiftX": {
+                          "scale": -0.03,
+                          "w": {
+                            "VGrad": [
+                              0.2,
+                              1.0
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "pid": 0,
+                      "kind": {
+                        "ShiftX": {
+                          "scale": 0.018,
+                          "w": "One"
+                        }
+                      }
+                    }
+                  ],
+                  "base_offsets": [],
+                  "keyforms": []
+                },
+                "children": [
+                  {
+                    "kind": "Mesh",
+                    "rect": {
+                      "x": 0.85875,
+                      "y": 0.6675,
+                      "w": 0.30437496,
+                      "h": 1.1049998
+                    },
+                    "div_x": 3,
+                    "div_y": 4,
+                    "uv": {
+                      "x": 1238.1998,
+                      "y": 0.0,
+                      "w": 178.44998,
+                      "h": 626.79987
+                    },
+                    "part": "SideHairL",
+                    "drivers": [],
+                    "base_opacity": 1.0,
+                    "opac_drivers": []
+                  }
+                ]
+              },
+              {
+                "kind": "Warp",
+                "def": {
+                  "rect": {
+                    "x": 1.76,
+                    "y": 0.58,
+                    "w": 0.48,
+                    "h": 1.32
+                  },
+                  "div_x": 3,
+                  "div_y": 4,
+                  "drivers": [
+                    {
+                      "pid": 24,
+                      "kind": {
+                        "ShiftX": {
+                          "scale": 0.055,
+                          "w": {
+                            "VGrad": [
+                              0.3,
+                              1.0
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "pid": 26,
+                      "kind": {
+                        "ShiftX": {
+                          "scale": 0.03,
+                          "w": {
+                            "VGrad": [
+                              0.2,
+                              1.0
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "pid": 0,
+                      "kind": {
+                        "ShiftX": {
+                          "scale": 0.018,
+                          "w": "One"
+                        }
+                      }
+                    }
+                  ],
+                  "base_offsets": [],
+                  "keyforms": []
+                },
+                "children": [
+                  {
+                    "kind": "Mesh",
+                    "rect": {
+                      "x": 1.8368751,
+                      "y": 0.6675,
+                      "w": 0.30437508,
+                      "h": 1.1049998
+                    },
+                    "div_x": 3,
+                    "div_y": 4,
+                    "uv": {
+                      "x": 1416.6498,
+                      "y": 0.0,
+                      "w": 178.45004,
+                      "h": 626.79987
+                    },
+                    "part": "SideHairR",
+                    "drivers": [],
+                    "base_opacity": 1.0,
+                    "opac_drivers": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "physics": [
+    {
+      "name": "HairSway",
+      "inputs": [
+        {
+          "pid": 0,
+          "deg": 30.0
+        },
+        {
+          "pid": 2,
+          "deg": 30.0
+        },
+        {
+          "pid": 16,
+          "deg": 10.0
+        }
+      ],
+      "strands": [
+        {
+          "anchor": {
+            "x": 1.5,
+            "y": 0.72
+          },
+          "base_angle_deg": 90.0,
+          "n_joints": 1,
+          "rest_len": 0.14,
+          "stiffness": 3.5,
+          "inertial_mass": 1.0,
+          "damping": 4.5
+        },
+        {
+          "anchor": {
+            "x": 1.0,
+            "y": 0.8
+          },
+          "base_angle_deg": 96.0,
+          "n_joints": 2,
+          "rest_len": 0.16,
+          "stiffness": 2.6,
+          "inertial_mass": 1.2,
+          "damping": 4.0
+        },
+        {
+          "anchor": {
+            "x": 2.0,
+            "y": 0.8
+          },
+          "base_angle_deg": 84.0,
+          "n_joints": 2,
+          "rest_len": 0.16,
+          "stiffness": 2.6,
+          "inertial_mass": 1.2,
+          "damping": 4.0
+        },
+        {
+          "anchor": {
+            "x": 1.5,
+            "y": 0.62
+          },
+          "base_angle_deg": 90.0,
+          "n_joints": 2,
+          "rest_len": 0.18,
+          "stiffness": 2.0,
+          "inertial_mass": 1.4,
+          "damping": 3.6
+        },
+        {
+          "anchor": {
+            "x": 1.45,
+            "y": 0.55
+          },
+          "base_angle_deg": -70.0,
+          "n_joints": 1,
+          "rest_len": 0.12,
+          "stiffness": 1.8,
+          "inertial_mass": 0.6,
+          "damping": 3.0
+        }
+      ],
+      "outputs": [
+        {
+          "strand": 0,
+          "joint": 0,
+          "pid": 23,
+          "scale": 0.85
+        },
+        {
+          "strand": 1,
+          "joint": 1,
+          "pid": 24,
+          "scale": 0.8
+        },
+        {
+          "strand": 1,
+          "joint": 1,
+          "pid": 26,
+          "scale": 0.45
+        },
+        {
+          "strand": 2,
+          "joint": 1,
+          "pid": 24,
+          "scale": 0.8
+        },
+        {
+          "strand": 3,
+          "joint": 1,
+          "pid": 25,
+          "scale": 0.9
+        },
+        {
+          "strand": 4,
+          "joint": 0,
+          "pid": 23,
+          "scale": 0.55
+        }
+      ]
+    }
+  ],
+  "clips": [
+    {
+      "name": "IdleSway",
+      "dur": 12.0,
+      "looped": true,
+      "curves": [
+        {
+          "pid": 2,
+          "keys": [
+            {
+              "t": 0.0,
+              "v": 0.0
+            },
+            {
+              "t": 3.0,
+              "v": 2.4
+            },
+            {
+              "t": 6.0,
+              "v": 0.0
+            },
+            {
+              "t": 9.0,
+              "v": -2.4
+            },
+            {
+              "t": 12.0,
+              "v": 0.0
+            }
+          ],
+          "add": true
+        },
+        {
+          "pid": 1,
+          "keys": [
+            {
+              "t": 0.0,
+              "v": 0.0
+            },
+            {
+              "t": 2.8,
+              "v": 2.5
+            },
+            {
+              "t": 5.6,
+              "v": 0.0
+            },
+            {
+              "t": 8.4,
+              "v": -2.5
+            },
+            {
+              "t": 11.2,
+              "v": 0.0
+            },
+            {
+              "t": 12.0,
+              "v": 0.0
+            }
+          ],
+          "add": true
+        },
+        {
+          "pid": 18,
+          "keys": [
+            {
+              "t": 0.0,
+              "v": 0.0
+            },
+            {
+              "t": 3.0,
+              "v": 2.0
+            },
+            {
+              "t": 6.0,
+              "v": 0.0
+            },
+            {
+              "t": 9.0,
+              "v": -2.0
+            },
+            {
+              "t": 12.0,
+              "v": 0.0
+            }
+          ],
+          "add": true
+        },
+        {
+          "pid": 17,
+          "keys": [
+            {
+              "t": 0.0,
+              "v": 0.0
+            },
+            {
+              "t": 4.0,
+              "v": 1.2
+            },
+            {
+              "t": 8.0,
+              "v": -1.2
+            },
+            {
+              "t": 12.0,
+              "v": 0.0
+            }
+          ],
+          "add": true
+        },
+        {
+          "pid": 21,
+          "keys": [
+            {
+              "t": 0.0,
+              "v": 0.0
+            },
+            {
+              "t": 6.0,
+              "v": 2.5
+            },
+            {
+              "t": 12.0,
+              "v": 0.0
+            }
+          ],
+          "add": true
+        },
+        {
+          "pid": 22,
+          "keys": [
+            {
+              "t": 0.0,
+              "v": 0.0
+            },
+            {
+              "t": 3.0,
+              "v": -1.5
+            },
+            {
+              "t": 6.0,
+              "v": 0.0
+            },
+            {
+              "t": 9.0,
+              "v": -1.5
+            },
+            {
+              "t": 12.0,
+              "v": 0.0
+            }
+          ],
+          "add": true
+        }
+      ]
+    },
+    {
+      "name": "Wave",
+      "dur": 2.8,
+      "looped": false,
+      "curves": [
+        {
+          "pid": 22,
+          "keys": [
+            {
+              "t": 0.0,
+              "v": 0.0
+            },
+            {
+              "t": 0.32,
+              "v": -28.0
+            },
+            {
+              "t": 0.8,
+              "v": -28.0
+            },
+            {
+              "t": 1.05,
+              "v": -8.0
+            },
+            {
+              "t": 1.35,
+              "v": -28.0
+            },
+            {
+              "t": 1.6,
+              "v": -8.0
+            },
+            {
+              "t": 1.85,
+              "v": -28.0
+            },
+            {
+              "t": 2.2,
+              "v": -28.0
+            },
+            {
+              "t": 2.5,
+              "v": 0.0
+            },
+            {
+              "t": 2.8,
+              "v": 0.0
+            }
+          ],
+          "add": false
+        },
+        {
+          "pid": 2,
+          "keys": [
+            {
+              "t": 0.0,
+              "v": 0.0
+            },
+            {
+              "t": 0.35,
+              "v": 6.0
+            },
+            {
+              "t": 2.2,
+              "v": 6.0
+            },
+            {
+              "t": 2.5,
+              "v": 0.0
+            }
+          ],
+          "add": false
+        },
+        {
+          "pid": 13,
+          "keys": [
+            {
+              "t": 0.0,
+              "v": 0.0
+            },
+            {
+              "t": 0.4,
+              "v": 0.8
+            },
+            {
+              "t": 2.2,
+              "v": 0.8
+            },
+            {
+              "t": 2.5,
+              "v": 0.0
+            }
+          ],
+          "add": false
+        },
+        {
+          "pid": 5,
+          "keys": [
+            {
+              "t": 0.0,
+              "v": 0.0
+            },
+            {
+              "t": 0.4,
+              "v": 0.9
+            },
+            {
+              "t": 2.2,
+              "v": 0.9
+            },
+            {
+              "t": 2.5,
+              "v": 0.0
+            }
+          ],
+          "add": false
+        },
+        {
+          "pid": 6,
+          "keys": [
+            {
+              "t": 0.0,
+              "v": 0.0
+            },
+            {
+              "t": 0.4,
+              "v": 0.9
+            },
+            {
+              "t": 2.2,
+              "v": 0.9
+            },
+            {
+              "t": 2.5,
+              "v": 0.0
+            }
+          ],
+          "add": false
+        },
+        {
+          "pid": 9,
+          "keys": [
+            {
+              "t": 0.0,
+              "v": 0.0
+            },
+            {
+              "t": 0.4,
+              "v": 0.5
+            },
+            {
+              "t": 2.2,
+              "v": 0.5
+            },
+            {
+              "t": 2.5,
+              "v": 0.0
+            }
+          ],
+          "add": false
+        }
+      ]
+    },
+    {
+      "name": "Hop",
+      "dur": 1.7,
+      "looped": false,
+      "curves": [
+        {
+          "pid": 28,
+          "keys": [
+            {
+              "t": 0.0,
+              "v": 0.0
+            },
+            {
+              "t": 0.22,
+              "v": -6.0
+            },
+            {
+              "t": 0.4,
+              "v": 10.0
+            },
+            {
+              "t": 0.62,
+              "v": 4.0
+            },
+            {
+              "t": 0.8,
+              "v": 0.0
+            },
+            {
+              "t": 0.95,
+              "v": -5.0
+            },
+            {
+              "t": 1.2,
+              "v": 0.0
+            },
+            {
+              "t": 1.7,
+              "v": 0.0
+            }
+          ],
+          "add": false
+        },
+        {
+          "pid": 1,
+          "keys": [
+            {
+              "t": 0.0,
+              "v": 0.0
+            },
+            {
+              "t": 0.45,
+              "v": 10.0
+            },
+            {
+              "t": 0.9,
+              "v": 0.0
+            }
+          ],
+          "add": false
+        },
+        {
+          "pid": 8,
+          "keys": [
+            {
+              "t": 0.0,
+              "v": 0.0
+            },
+            {
+              "t": 0.45,
+              "v": -0.6
+            },
+            {
+              "t": 0.9,
+              "v": 0.0
+            }
+          ],
+          "add": false
+        },
+        {
+          "pid": 14,
+          "keys": [
+            {
+              "t": 0.0,
+              "v": 0.0
+            },
+            {
+              "t": 0.45,
+              "v": 0.4
+            },
+            {
+              "t": 0.9,
+              "v": 0.0
+            }
+          ],
+          "add": false
+        },
+        {
+          "pid": 9,
+          "keys": [
+            {
+              "t": 0.0,
+              "v": 0.0
+            },
+            {
+              "t": 0.45,
+              "v": 0.7
+            },
+            {
+              "t": 0.9,
+              "v": 0.0
+            }
+          ],
+          "add": false
+        },
+        {
+          "pid": 10,
+          "keys": [
+            {
+              "t": 0.0,
+              "v": 0.0
+            },
+            {
+              "t": 0.45,
+              "v": 0.7
+            },
+            {
+              "t": 0.9,
+              "v": 0.0
+            }
+          ],
+          "add": false
+        },
+        {
+          "pid": 2,
+          "keys": [
+            {
+              "t": 0.0,
+              "v": 0.0
+            },
+            {
+              "t": 0.5,
+              "v": 5.0
+            },
+            {
+              "t": 1.1,
+              "v": -3.0
+            },
+            {
+              "t": 1.7,
+              "v": 0.0
+            }
+          ],
+          "add": false
+        }
+      ]
+    }
+  ]
+}

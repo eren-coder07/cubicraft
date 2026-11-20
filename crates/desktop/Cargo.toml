@@ -1,0 +1,34 @@
+[package]
+name = "cubicraft-desktop"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[target.'cfg(target_os = "android")'.dependencies]
+winit = { version = "0.30", features = ["android-native-activity"] }
+android-activity = { version = "0.6", features = ["native-activity"] }
+android_logger = "0.14"
+log = "0.4"
+
+[dependencies]
+cubicraft-core = { path = "../core" }
+softbuffer = "0.4"
+winit = "0.30"
+raw-window-handle = "0.6"
+
+[package.metadata.android]
+package = "dev.cubicraft.desktop"
+apk_name = "cubicraft"
+build_targets = ["aarch64-linux-android"]
+
+[package.metadata.android.sdk]
+min_sdk_version = 21
+target_sdk_version = 30
+
+[package.metadata.android.application]
+label = "Cubicraft"
+
+[package.metadata.android.application.activity]
+orientation = "portrait"

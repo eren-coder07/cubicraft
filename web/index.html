@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Cubicraft — pure Rust Live2D</title>
+<style>
+  :root { color-scheme: dark; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; background: #0e0f16; overflow: hidden; }
+  body {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    font-family: "Segoe UI", system-ui, sans-serif; color: #cfd3e0;
+    touch-action: none; user-select: none; -webkit-user-select: none;
+  }
+  #stage { position: relative; }
+  canvas {
+    display: block; border-radius: 14px;
+    aspect-ratio: 1078 / 2559;
+    height: calc(100vh - 64px); width: auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,.55), 0 0 0 1px #262a3a;
+    cursor: pointer; touch-action: none;
+  }
+  #bar {
+    margin-top: 12px; font-size: 13px; color: #7c8296; letter-spacing: .3px;
+  }
+  #bar b { color: #b9bfd2; font-weight: 600; }
+  #loading {
+    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    flex-direction: column; gap: 14px; background: #13141d; border-radius: 14px;
+    font-size: 15px; color: #8b91a5; z-index: 2;
+  }
+  #loading .ring {
+    width: 38px; height: 38px; border-radius: 50%;
+    border: 3px solid #2c3145; border-top-color: #7c5cff; animation: spin 0.9s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  #err { color: #ff7a7a; font-size: 13px; max-width: 420px; text-align: center; white-space: pre-wrap; }
+</style>
+</head>
+<body>
+  <div id="stage">
+    <canvas id="view"></canvas>
+    <div id="loading"><div class="ring"></div><div id="loadtext">parsing PSD + rigging…</div><div id="err"></div></div>
+  </div>
+  <div id="bar"><b>move</b> pointer: she looks &bull; <b>drag</b>: pull her &bull; <b>Space</b>: blink &bull; <b>T</b>: talk</div>
+<script type="module">
+import init, { WebApp } from './pkg/cubicraft_web.js';
+
+const canvas = document.getElementById('view');
+const loading = document.getElementById('loading');
+const errBox = document.getElementById('err');
+const loadText = document.getElementById('loadtext');
+
+async function start() {
+  try {
+    await init();
+    loadText.textContent = 'downloading PSD model (20 MB, cached after first load)…';
+    const resp = await fetch('./assets/model/Set1.psd');
+    if (!resp.ok) throw new Error('PSD fetch failed: ' + resp.status);
+    const buf = new Uint8Array(await resp.arrayBuffer());
+
+    loadText.textContent = 'rigging…';
+    const app = new WebApp(canvas, buf);
+
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const fit = () => {
+      const rect = canvas.getBoundingClientRect();
+      app.resize(Math.round(rect.width * dpr), Math.round(rect.height * dpr));
+    };
+    fit();
+    window.addEventListener('resize', fit);
+
+    const pos = (e) => {
+      const rect = canvas.getBoundingClientRect();
+      return [ (e.clientX - rect.left) * dpr, (e.clientY - rect.top) * dpr ];
+    };
+    let down = false;
+    canvas.addEventListener('pointermove', (e) => { const [x,y] = pos(e); app.pointer(x, y); });
+    canvas.addEventListener('pointerdown', (e) => { down = true; const [x,y] = pos(e); app.pointer(x, y); app.press(true); canvas.setPointerCapture(e.pointerId); });
+    canvas.addEventListener('pointerup',   () => { down = false; app.press(false); });
+    canvas.addEventListener('pointerleave',() => { down = false; app.press(false); app.pointer_left(); });
+    window.addEventListener('keydown', (e) => {
+      if (e.code === 'Space' || e.code === 'KeyT' || e.code === 'KeyR') { e.preventDefault(); app.key(e.code); }
+    });
+
+    loading.remove();
+    let last = performance.now();
+    const tick = (now) => {
+      const dt = Math.min(now - last, 60);
+      last = now;
+      app.frame(dt);
+      requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  } catch (err) {
+    loading.querySelector('.ring').remove();
+    loadText.remove();
+    errBox.textContent = String(err);
+  }
+}
+start();
+</script>
+</body>
+</html>
